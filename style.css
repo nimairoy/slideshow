@@ -1,0 +1,21 @@
+.slideshow-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    background-color: aqua;
+}
+.slideshow-element{   
+    position: absolute;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.6s;
+}
+.slideshow-element h1, .fa-futbol,.fa-person-swimming, .fa-volleyball{
+    font-size: 8rem;
+    color: rgb(226, 89, 9);
+}
+.slideshow-element.current{
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 0.6s;
+}
